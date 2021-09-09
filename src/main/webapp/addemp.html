@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="jumbotron text-center">
+  <h1 class="text-danger">Employee Add Page</h1>
+  <p>Welcome user!</p> 
+</div>
+	<div class="container">
+		<div class="row">
+		<a href='index.html'>Log Out</a>
+		<div class="col-sm-12" style="margin-left:30%">
+				<h1>Add New Employee</h1>  
+					<form action="SaveServlet" method="post">  
+					
+					<table>  
+					<tr><td>Name:</td><td><input type="text" name="name"/></td></tr>  
+					<tr><td>Password:</td><td><input type="password" name="password"/></td></tr>  
+					<tr><td>Email:</td><td><input type="email" name="email"/></td></tr>  
+					<tr><td>Country:</td><td>  
+					<select name="country" style="width:150px">  
+					<option>India</option>  
+					<option>USA</option>  
+					<option>UK</option>  
+					<option>Other</option>  
+					</select>  
+					</td></tr>  
+					<tr><td colspan="2"><input class="btn btn-info" type="submit" value="Save Employee"/></td>
+					<span></span>
+					</tr>  
+					</table>  
+					</form>  
+<button type="submit" class="btn btn-light" style="margin-left:20%"><a href="ViewServlet">view employees</a> </button>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
